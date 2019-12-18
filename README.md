@@ -65,3 +65,4 @@ foo@bar:~/zed_stereonet/build$ make
 ```console
 foo@bar:~/zed_stereonet/build$ ./zed_stereonet ../stereonet_traced.pt 
 ```
+To execute the program press **Q**
