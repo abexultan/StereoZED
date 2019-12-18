@@ -39,6 +39,7 @@ cv::Mat tensor2cvMat(at::Tensor tensor_input){
   int64_t cols = tensor_input_transf.sizes()[1];
   cv::Mat out_image = cv::Mat::zeros(rows, cols, CV_32FC1);
   std::memcpy(out_image.data, tensor_input_transf.data_ptr(), sizeof(float)*tensor_input_transf.numel());
+  
   return out_image;
 }
 
@@ -51,7 +52,7 @@ torch::jit::script::Module load_module(std::string path){
       }
   catch (const c10::Error& e) {
     std::cerr << "error loading the model\n";
-    // return -1;
+    return -1;
                               } 
 }
 
