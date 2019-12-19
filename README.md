@@ -9,11 +9,22 @@ Trained and traced StereoNet network with ZED Camera streaming input.
 4. OpenCV
 5. libtorch
 
+## Download:
+
+To download the source code, simply clone the repo to your home folder:
+
+```console
+foo@bar:~$ cd ~
+foo@bar:~$ git clone https://github.com/abexultan/StereoZED.git
+foo@bar:~$ ls
+StereoZED
+```
+
 ## Build:
 
 ```console
-foo@bar:~/zed_stereonet$ mkdir build && cd build
-foo@bar:~/zed_stereonet/build$ cmake -DCMAKE_PREFIX_PATH=/<path-to-libtorch> ..
+foo@bar:~/StereoZED$ mkdir build && cd build
+foo@bar:~/StereoZED/build$ cmake -DCMAKE_PREFIX_PATH=/<path-to-libtorch> ..
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -54,8 +65,8 @@ foo@bar:~/zed_stereonet/build$ cmake -DCMAKE_PREFIX_PATH=/<path-to-libtorch> ..
 -- Found torch: <path-to-libtorch.so> 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/foo/zed_stereonet/build
-foo@bar:~/zed_stereonet/build$ make
+-- Build files have been written to: /home/foo/StereoZED/build
+foo@bar:~/StereoZED/build$ make
 [ 50%] Building CXX object CMakeFiles/zed_stereonet.dir/src/zed_stereonet.cpp.o
 [100%] Linking CXX executable zed_stereonet
 [100%] Built target zed_stereonet
@@ -63,6 +74,6 @@ foo@bar:~/zed_stereonet/build$ make
 
 ## Use:
 ```console
-foo@bar:~/zed_stereonet/build$ ./zed_stereonet ../stereonet_traced.pt 
+foo@bar:~/StereoZED/build$ ./zed_stereonet ../stereonet_traced.pt 
 ```
 Press **Q** to terminate the process.
