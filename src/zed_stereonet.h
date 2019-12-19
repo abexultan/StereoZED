@@ -52,7 +52,7 @@ torch::jit::script::Module load_module(std::string path){
       }
   catch (const c10::Error& e) {
     std::cerr << "error loading the model\n";
-    return -1;
+//     return -1;
                               } 
 }
 
