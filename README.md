@@ -16,8 +16,15 @@ To download the source code, simply clone the repo to your home folder:
 ```console
 foo@bar:~$ cd ~
 foo@bar:~$ git clone https://github.com/abexultan/StereoZED.git
-foo@bar:~$ ls
-StereoZED
+Cloning into 'StereoZED'...
+remote: Enumerating objects: 30, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 30 (delta 12), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (30/30), done.
+Checking connectivity... done.
+foo@bar:~$ ls StereoZED/
+CMakeLists.txt  README.md  src  stereonet_traced.pt
 ```
 
 ## Build:
