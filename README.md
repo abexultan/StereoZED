@@ -24,7 +24,7 @@ remote: Total 30 (delta 12), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (30/30), done.
 Checking connectivity... done.
 foo@bar:~$ ls StereoZED/
-CMakeLists.txt  README.md  src  stereonet_traced.pt
+CMakeLists.txt  README.md  src  stereonet_traced_720p.pt
 ```
 
 ## Build:
