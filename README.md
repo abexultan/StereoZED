@@ -30,6 +30,7 @@ CMakeLists.txt  README.md  src  stereonet_traced_720p.pt
 ## Build:
 
 ```console
+foo@bar:~$ cd StereoZED/
 foo@bar:~/StereoZED$ mkdir build && cd build
 foo@bar:~/StereoZED/build$ cmake -DCMAKE_PREFIX_PATH=/<path-to-libtorch> ..
 -- The C compiler identification is GNU 5.4.0
