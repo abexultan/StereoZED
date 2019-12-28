@@ -81,6 +81,6 @@ foo@bar:~/StereoZED/build$ make
 
 ## Use:
 ```console
-foo@bar:~/StereoZED/build$ ./zed_stereonet ../stereonet_traced.pt 
+foo@bar:~/StereoZED/build$ ./zed_stereonet ../stereonet_traced_720p.pt 
 ```
 Press **Q** to terminate the process.
