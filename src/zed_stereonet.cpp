@@ -50,8 +50,7 @@ int main(int argc, const char* argv[]) {
             right = slMat2cvMat(zed_image_R);
             inputs = cvMat2moduleinput(left, right);
             output = module.forward(inputs).toTensor();
-            output = output/255;
-            output_cv = tensor2cvMat(output);
+            output_cv = tensor2cvMat(output/255.0);
             cv::imshow("Disparity Display", output_cv);
           }
           key = cv::waitKey(5);
