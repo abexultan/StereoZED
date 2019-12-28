@@ -4,7 +4,7 @@ Trained and traced StereoNet network with ZED Camera streaming input.
 ## Prerequisites:
 
 1. nVidia driver version >= 440.3301
-2. CUDA 10.0
+2. CUDA 10.0, cuDNN 7.6
 3. ZED API
 4. OpenCV
 5. libtorch
